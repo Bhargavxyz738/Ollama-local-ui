@@ -41,7 +41,7 @@ Follow these instructions to get the web UI up and running on your local machine
 2.  **Ollama:** You must have Ollama installed and running. Visit the [Ollama official website](https://ollama.com/) for installation instructions.
 3.  **A Local Model:** You need at least one model pulled. You can get one by running:
     ```sh
-    ollama run llama3
+    ollama run ollama run llama3.2:1b-instruct-q4_1
     ```
 
 ### Installation & Running
