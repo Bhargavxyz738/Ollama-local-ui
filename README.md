@@ -52,14 +52,7 @@ Follow these instructions to get the web UI up and running on your local machine
     cd https://github.com/Bhargavxyz738/Ollama-local-ui.git
     ```
 
-2.  **Create `requirements.txt`**
-    Create a file named `requirements.txt` in the project root and add the following lines:
-    ```
-    Flask
-    ollama
-    ```
-
-3.  **Set Up a Virtual Environment (Recommended)**
+2.  **Set Up a Virtual Environment (Recommended)**
     ```sh
     # Create the virtual environment
     python -m venv venv
@@ -71,19 +64,19 @@ Follow these instructions to get the web UI up and running on your local machine
     .\venv\Scripts\activate
     ```
 
-4.  **Install Dependencies**
+3.  **Install Dependencies**
     With your virtual environment active, install the required Python packages:
     ```sh
     pip install -r requirements.txt
     ```
 
-5.  **Run the Application**
+4.  **Run the Application**
     Make sure your Ollama application is running in the background. Then, start the Flask server:
     ```sh
     python main.py
     ```
 
-6.  **Open the UI**
+5.  **Open the UI**
     Open your web browser and navigate to:
     [http://127.0.0.1:5000](http://127.0.0.1:5000)
 
