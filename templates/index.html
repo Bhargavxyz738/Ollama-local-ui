@@ -15,10 +15,28 @@
 <body class="dark-theme">
     <div class="app-container">
         <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-title">
+                    <svg class="sidebar-title-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11 4.5L19 10L11 15.5L3 10L11 4.5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                        <path d="M3 10L11 15.5L19 10" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                        <path d="M3 14L11 19.5L19 14" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                    </svg>
+                    <h3>Local Ollama</h3>
+                </div>
+                <button id="new-chat-btn" class="new-chat-btn-sidebar" title="New Chat">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 5V19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    <span>New Chat</span>
+                </button>
+            </div>
             <div class="sidebar-content">
                 <nav id="chat-history-list" class="chat-history">
-                    <!-- Chat history here yaya -->
                 </nav>
+            </div>
+            <div class="sidebar-footer">
+                <button id="theme-toggle-btn" class="icon-btn" title="Toggle Theme">
+                </button>
+                <div class="user-profile">BG</div>
             </div>
         </aside>
         <main class="chat-area">
@@ -33,18 +51,11 @@
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" /></svg>
                         </button>
                         <div id="model-list" class="model-list">
-                            <!-- Model list will be populated by js okay, this ensures latest models are also included hehe -->
                         </div>
                     </div>
                 </div>
+                <div id="chat-title-display" class="chat-title-top-bar"></div>
                 <div class="header-right">
-                    <button id="new-chat-btn" class="icon-btn" title="New Chat">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 5V19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                    </button>
-                    <button id="theme-toggle-btn" class="icon-btn" title="Toggle Theme">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3V5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4.22 4.22L5.64 5.64" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M18.36 18.36L16.94 16.94" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3 12H5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M19 12H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4.22 19.78L5.64 18.36" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M18.36 5.64L16.94 4.22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                    </button>
-                    <div class="user-profile">BG</div>
                 </div>
             </header>
 
